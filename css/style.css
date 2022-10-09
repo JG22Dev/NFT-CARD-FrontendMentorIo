@@ -28,7 +28,6 @@ main{
 .container{
     width: 350px;
     height: 600px;
-    border: 2px solid black;
     border-radius: 15px;
     background-color: var(--VeryDarkBlue-card-BG);
     margin-top: 80px;
@@ -52,32 +51,62 @@ main{
 h1{
     color: var(--White);
 }
-p{
-    color: var(--VeryDarkBlue-line);
+.description p{
+    color: var(--SoftBlue);
     font-size: 18px;
+    font-weight: 400;
 }
 .price{
     color: var(--Cyan);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.price img {
+    padding: 5px;
 }
 .days{
     color: var(--SoftBlue);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+.days img {
+    padding: 5px;
 }
 
 .bar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-bottom: 1px solid var(--VeryDarkBlue-line);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+.creation{
+    display: flex;
 }
 
+.creation p {
+    padding-left: 1rem;
+    font-weight: 400;
+}
+.creation span {
+    color: var(--White);
+}
 .creation img{
+    margin-top: 10px;
     border: 2px solid var(--White);
     border-radius: 50%;
     width: 32px;
     height: 32px;
 }
-
-/**/
-
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    margin-top: 5rem;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
